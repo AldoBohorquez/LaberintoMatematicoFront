@@ -1,0 +1,21 @@
+<div class="container my-5 ">
+  <div class="row justify-content-center align-items-center p-5 mx-3 central">
+    <div class="col-auto">
+      <div class="lagarto p-4">
+        <img src="../../../assets/images/lagarto.png" class="img-fluid" width="90px">
+
+      </div>
+    </div>
+    <div class="col-auto">
+      <h5 class="mb-0">Bienvenido</h5>
+      <h5 class="mb-0"> {{usuarioLogueado?.nombreCompleto}} </h5>
+    </div>
+  </div>
+  <div class="row d-flex flex-wrap gap-5 p-5 justify-content-center">
+    @for (item of groupList; track $index) {
+    <button class="btn group col-auto p-3 rounded-3" (click)="goToDetail(item.id_grupo)">
+      {{item.nombre}}
+    </button>
+  }
+  </div>
+</div>

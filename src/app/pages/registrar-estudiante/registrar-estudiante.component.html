@@ -1,0 +1,12 @@
+<h2 class="text-center mt-4">Añadir Estudiante</h2>
+<div class="card text-center">
+  <form  [formGroup]="formAlumno" (ngSubmit)="saveEstudiante()">
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label mt-3">Nombre completo:</label>
+            <input type="text" class="form-control" formControlName="nombre" >
+        </div>
+        <button type="submit" class="btn btn-secondary form-label">Registrar</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,23 @@
+.mainContainer {
+    padding: 120px;
+    background-image: url('../../../assets/images/imgInicioTransparencia.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo {
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+.img-fluid {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.img-fluid:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0);
+    transition: box-shadow 0.3s ease, border 0.3s ease; 
+}

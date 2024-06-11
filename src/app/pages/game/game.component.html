@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center mainContainer">
+  <div class="container quiz_box">
+    <div class="row d-flex align-items-center header">
+      <div class="col-12 col-md-6 text-center que_text">
+        <span>{{ currentQuestion?.pregunta }}</span>
+      </div>
+      <div class="col-12 col-md-6 text-center imagen">
+        <img class="character" [src]="'../../assets/images/' + personaje + '.png'" alt="" />
+      </div>
+    </div>
+    <div class="row section">
+      <div class="pt-3 option_list">
+        <div
+          class="col option"
+          *ngFor="let respuesta of currentQuestion?.respuestas"
+          [class.correct]="respuesta.correcta && (showCorrect || showIncorrect)"
+          [class.incorrect]="!respuesta.correcta && showIncorrect && respuesta === selectedOption"
+          (click)="optionSelected(respuesta)"
+        >
+          <span>{{ respuesta.respuesta }}</span>
+          <div *ngIf="respuesta.correcta && (showCorrect || showIncorrect)" class="icon tick">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+          <div *ngIf="!respuesta.correcta && showIncorrect && respuesta === selectedOption" class="icon cross">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row footer">
+      <div class="col justify-content-between d-flex pb-4">
+        <div class="timer">
+          <div class="time_text">Tiempo restante</div>
+          <div class="time_sec">{{ timer }}</div>
+        </div>
+        <button class="next_btn" *ngIf="isOptionSelected" (click)="nextQuestion()">
+          {{ isLastQuestion() ? 'Finalizar' : 'Siguiente' }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

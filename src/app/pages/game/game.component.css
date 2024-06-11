@@ -1,0 +1,136 @@
+.mainContainer {
+  padding: 5%;
+  background-image: url('../../../assets/images/fondoJuego.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.character {
+  width: 25%;
+  height: auto;
+}
+
+.quiz_box {
+  background: #fff;
+  border-radius: 5px;
+  width: 1000px;
+}
+
+.quiz_box .header {
+  position: relative;
+  z-index: 99;
+  padding: 5px 30px;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.quiz_box .que_text {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.section {
+  padding: 25px 30px;
+  background: #fff;
+}
+
+.icon {
+  font-size: 25px;
+  pointer-events: none;
+}
+
+.option {
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  color: #001085;
+  background-color: aliceblue;
+}
+
+.option.correct {
+  border-color: green;
+  background-color: #d4edda;
+}
+
+.option.incorrect {
+  border-color: red;
+  background-color: #f8d7da;
+}
+
+.fa-circle-check {
+  color: #23903c;
+  background: #d4edda;
+  border-radius: 50%;
+}
+
+.fa-circle-xmark {
+  color: #a4283a;
+  background: #f8d7da;
+  border-radius: 50%;
+}
+
+.footer {
+  padding: 0px 30px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  height: 45px;
+  background: #b5d3bc;
+  border: 2px solid #8cac94;
+  border-radius: 5px;
+  padding: 0 8px;
+}
+
+.timer .time_text {
+  font-weight: 400;
+  font-size: 18px;
+  user-select: none;
+}
+
+.timer .time_sec {
+  font-size: 20px;
+  font-weight: 500;
+  background: #5f7c65;
+  color: white;
+  height: 30px;
+  width: 45px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 1px solid #2e3d31;
+  user-select: none;
+}
+
+.footer .next_btn {
+  height: 40px;
+  padding: 0 13px;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  background: #e56399;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #e56399;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer .next_btn:hover {
+  background: #ed96bb;
+}

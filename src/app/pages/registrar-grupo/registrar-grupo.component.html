@@ -1,0 +1,12 @@
+<h2 class="text-center mt-4">Registra un grupo</h2>
+<div class="card text-center">
+  <form [formGroup]="formGrupo" (ngSubmit)="saveGrupo()">
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="" class="form-label mt-3">Nombre del grupo:</label>
+            <input type="text" class="form-control" formControlName="nombre">
+        </div>
+        <button type="submit" class="btn btn-secondary form-label">Registrar</button>
+    </div>
+    </form>
+</div>

@@ -1,0 +1,76 @@
+<nav
+  class="contm navbar navbar-expand-lg"
+  [ngClass]="{
+    'home-page': isHomePage,
+    'login-page': isLoginProfesorPage,
+    'profesor-page': isProfesorPage
+  }"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand logoText" routerLink="/home">
+      <img
+        src="../../assets/images/logo.png"
+        alt="Logo"
+        width="60"
+        height="auto"
+        class="d-inline-block align-text-center"
+      />
+      Maze Coding
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav gap-2 text-center">
+        <a
+          class="nav-link active linkIngresar"
+          routerLink="/loginProfesor"
+          *ngIf="showBtnIngresar"
+          [ngClass]="{
+            'home-link': isHomePage,
+            'login-link': isLoginProfesorPage
+          }"
+          >Ingresar</a
+        >
+        <a
+          class="nav-link active linkInicio"
+          routerLink="/bienvenida"
+          *ngIf="authService.isLoggedInSync()"
+          >Inicio</a
+        >
+        <a
+          class="nav-link active linkInicio"
+          routerLink="/registrarGrupo"
+          *ngIf="authService.isLoggedInSync()"
+          >Registrar Grupo</a
+        >
+        <a
+          class="nav-link active linkInicio"
+          routerLink="/crudGrupo"
+          *ngIf="authService.isLoggedInSync()"
+          >Grupos</a
+        >
+        <a
+          class="nav-link active linkSalir"
+          *ngIf="authService.isLoggedInSync()"
+          (click)="logout()"
+          >Salir</a
+        >
+        <a
+          class="nav-link active linkSalirAlumno"
+          *ngIf="authAlumnoService.isLoggedInSync()"
+          (click)="logout()"
+          >Salir</a
+        >
+      </div>
+    </div>
+  </div>
+</nav>

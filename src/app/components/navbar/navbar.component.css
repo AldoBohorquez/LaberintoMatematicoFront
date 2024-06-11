@@ -1,0 +1,50 @@
+.contm{
+  padding: 10px 50px;
+}
+
+.logoText{
+  font-weight: bold;
+  margin-left: 20px !important;
+}
+
+.linkIngresar{
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.linkSalir{
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: white !important;
+  color: black;
+  cursor: pointer;
+}
+
+.linkSalirAlumno{
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: black !important;
+  color: #BBEBBD  !important;
+  cursor: pointer;
+}
+
+
+
+/* cambiar colores de navbar*/
+.home-page {
+  background-color: #FFFFFF; /* Cambia el color del navbar en la página de home */
+}
+
+.home-link{
+  background-color: #BBEBBD;/* Cambia el color del enlace en la página de home */
+}
+
+.login-page, .profesor-page {
+  background-color: #BBEBBD; /* Cambia el color del navbar en la página de login y resgitro de profesor*/
+}
+
+.login-link{
+  background-color: #FFFFFF; /* Cambia el color del enlace en la página de login y registro de profesor*/
+}
+
+

@@ -1,0 +1,20 @@
+<div
+  class="container-fluid mainContainer p-5 d-flex align-items-center justify-content-center"
+>
+  <div class="row">
+    <div class="col cuadro p-4 d-flex flex-lg-row flex-md-row gap-3">
+      <div class="row">
+        <img [src]="'../../assets/images/' + personaje + '.png'" class="character">
+      </div>
+      <div class="row d-flex flex-column ">
+        <div class="col d-flex flex-column align-items-center justify-content-center">
+          <span class="score_text">Puntuación</span>
+          <span class="score">{{score}}/10</span>
+        </div>
+        <div class="col mt-3 mt-lg-0 mt-md-0  d-flex justify-content-center align-items-center">
+          <button class="btn btnContinue" (click)="goToStart()">Continuar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.title {
+    font-size: 1.6em !important;
+}
+
+.aniadir {
+    background-color: #7BD4DA;
+    border: none !important;
+    color: #000;
+    font-size: 1.2em !important;
+}
+
+.azul {
+    background-color: #79A5AE;
+    text-align: center !important;
+    color: #fff;
+}
+
+.azulClaro {
+    background-color: #C9D9DD;
+    text-align: center !important;
+}
+
+.editar {
+    background-color: #FFCE00;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.eliminar {
+    background-color: #ff0000a3;
+    color: #fff;
+}

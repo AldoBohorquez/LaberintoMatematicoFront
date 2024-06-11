@@ -1,0 +1,15 @@
+
+.lagarto{
+  background-color: #FFCE00;
+  border-radius: 100px;
+}
+
+.central{
+  border: 2px dotted #000;
+}
+
+.group{
+  background-color: #968269;
+  color: white;
+  /* border-radius: 10px; */
+}

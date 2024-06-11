@@ -1,0 +1,45 @@
+.title {
+    width: 100%;
+    min-width: 200px;
+    font-size: 2em;
+    text-align: center;
+    border: 4px dotted #000;
+    border-radius: 5px;
+}
+
+.form-check-input[type="checkbox"] {
+    width: 80px;
+    height: 40px;
+}
+
+.form-check-input[type="checkbox"]:checked {
+    background-color: #BBEBBD;
+    border: none !important;
+}
+
+.form-check-input[type="checkbox"]:not(:checked) {
+    background-color: #666666;
+    border: none !important;
+}
+
+.lista {
+    background-color: #FFCE00;
+    margin: 10px;
+}
+
+.agregar {
+    background-color: #2FC0E0;
+    margin: 10px;
+}
+
+.azul {
+    background-color: #79A5AE;
+}
+
+.azulClaro {
+    background-color: #C9D9DD;
+}
+
+.table {
+    border: transparent !important;
+}

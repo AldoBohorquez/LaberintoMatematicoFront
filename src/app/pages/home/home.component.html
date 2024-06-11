@@ -1,0 +1,32 @@
+<div class="container-fluid mainContainer p-5">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center titulo">Laberinto Matemático</div>
+    <div class="col-lg-6 col-md-8 col-sm-10 col-12 cuadro">
+      <div class="cuadro2 p-5 text-center">
+        <form (ngSubmit)="onSubmit(form.value)" #form="ngForm">
+          <input
+            type="number"
+            class="form-control mb-3"
+            placeholder="Ingrese ID del estudiante"
+            name="estudianteId"
+            ngModel
+            required
+          />
+          <div class="invalid-feedback">Debe ingresar el ID del estudiante.</div>
+
+          <input
+            type="number"
+            class="form-control mb-3"
+            placeholder="Ingrese código del grupo"
+            name="grupoId"
+            ngModel
+            required
+          />
+          <div class="invalid-feedback">Debe ingresar el código del grupo.</div>
+
+          <button type="submit" class="btn btnJugar">Jugar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
